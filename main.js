@@ -81,7 +81,7 @@ hotbar.addEventListener('click', function(event) {
 
 gameField.addEventListener('click', function(event) {
     const clickedElement = event.target;
-    if(selectLetter.length > 0 && clickedElement.classList.contains('field-letter') ) {
+    if(clickedElement.classList.contains('field-letter') ) {
         clickedElement.textContent = selectLetter
     }
     selectLetter = ''
